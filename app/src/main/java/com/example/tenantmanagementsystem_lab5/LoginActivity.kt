@@ -32,6 +32,8 @@ class LoginActivity : AppCompatActivity() {
             }
 
             val intent = Intent(this, MainActivity::class.java)
+            // THIS IS THE NEW LINE ADDED:
+            intent.putExtra("EMAIL", email)
             startActivity(intent)
             finish()
         }

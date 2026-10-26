@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     id("com.android.legacy-kapt") version "9.0.0"
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -46,4 +47,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+    implementation("androidx.navigation:navigation-fragment-ktx:2.9.8")
+    implementation("androidx.navigation:navigation-ui-ktx:2.9.8")
+    implementation("com.google.android.material:material:1.12.0")
 }
